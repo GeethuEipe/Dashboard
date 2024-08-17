@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
+import { Facebook } from './icons/Facebook'
+import { Google } from './icons/Google'
+import { Twitter } from './icons/Twitter'
 import { useParams } from 'react-router-dom'
 
 export const DetailPage = () => {
@@ -18,7 +21,7 @@ export const DetailPage = () => {
     }
     fetchUserDetails()
   }, [id])
-  console.log('userDetails', userDetails)
+
   if (!userDetails) {
     return <div>Loading...</div>
   }
@@ -36,6 +39,11 @@ export const DetailPage = () => {
           five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged.
         </p>
+        <div className="flex gap-4">
+          <Twitter />
+          <Google />
+          <Facebook />
+        </div>
       </div>
     </section>
   )
