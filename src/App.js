@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="p-12">
       <Navbar />
-      <div className="grid grid-cols-1 gap-20 md:flex ">
+      <div className="grid grid-cols-1 gap-20 md:flex">
         <SideBar />
         <UserTable />
       </div>
